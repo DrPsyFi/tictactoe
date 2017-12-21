@@ -97,7 +97,6 @@ function cellOpen(row, col) {
 function setupEvents() {
   updateMessage()
 
-
   cellSelect.addEventListener('mouseover', function(event) {
     let row = parseInt(event.target.classList[0][3])
     let col = parseInt(event.target.classList[0][7])
@@ -118,25 +117,27 @@ function setupEvents() {
     if(cellOpen(row, col)) {
       event.target.style.backgroundImage = "none"
     }
-  })
+  });
   // PLAYER TURN
   cellSelect.addEventListener('click', function(event) {
       let row = parseInt(event.target.classList[0][3])
       let col = parseInt(event.target.classList[0][7])
-      updateDateBoard(row,col);
-      console.log(board);
 
-      if (currentPlayer === 0) {
+      console.log("Click Listener");
+
+
+      if(cellOpen(row, col)) {
+        updateDateBoard(row,col)
+        if (currentPlayer === 0) {
          event.target.style.backgroundImage = "url('rebel.jpeg')"
          currentPlayer = 1
-      } else {
-        event.target.style.backgroundImage = "url('Empire.jpg')"
-        currentPlayer = 0
+        } else {
+          event.target.style.backgroundImage = "url('Empire.jpg')"
+          currentPlayer = 0
+        }
       }
-      //switch player turn
-  })
-}
+    })
 
-setupEvents();
-var tmpBoard = [[null,null,1],[null,1,null],[1,null,null]]
-console.log(checkPosDiag(tmpBoard))
+};
+
+setupEvents()
