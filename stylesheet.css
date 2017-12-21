@@ -1,0 +1,110 @@
+.TicTacToeBoard {
+  max-width: 600px;
+  margin: auto;
+}
+
+}
+font {
+font-family: 'Poller One', cursive;
+}
+.row {
+  display: flex;
+  justify-content: center;
+  background-color: #999999;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+}
+.image_section{
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  background-color: #999999;
+  font-family: 'Poller One', cursive;
+}
+
+.message {
+  line-height: 200px;
+  font-size: 40px;
+}
+.rebel {
+  height: 200px;
+  width:  200px;
+  justify-content: right;
+}
+.imperial {
+  height: 200px;
+  width:  200px;
+  justify-content:  left:
+}
+h1, h2 {
+  text-align: center;
+}
+.row0col0 {
+  background: white;
+  height: 200px;
+  width:  200px;
+  border-right: : 5px solid;
+  border-bottom:  5px solid;
+}
+.row0col1 {
+  background: white;
+  height: 200px;
+  width:  200px;
+  border-left:  5px solid;
+  border-right: : 5px solid;
+  border-bottom:  5px solid;
+}
+.row0col2 {
+    background: white;
+    height: 200px;
+    width:  200px;
+    border-left:  5px solid;
+    border-bottom:  5px solid;
+  }
+.row1col0 {
+  background: white;
+  height: 200px;
+  width:  200px;
+  border-right: : 5px solid;
+  border-bottom:  5px solid;
+}
+.row1col1 {
+  background: white;
+  height: 200px;
+  width:  200px;
+  border-left:  5px solid;
+  border-right: : 5px solid;
+  border-bottom:  5px solid;
+}
+.row1col2 {
+  background: white;
+  height: 200px;
+  width:  200px;
+  border-left:  5px solid;
+  border-bottom:  5px solid;
+}
+.row2col0 {
+  background: white;
+  height: 200px;
+  width:  200px;
+  border-right: : 5px solid;
+
+}
+.row2col1 {
+  background: white;
+  height: 200px;
+  width:  200px;
+  border-left:  5px solid;
+  border-right: : 5px solid;
+
+}
+.row2col2 {
+  background: white;
+  height: 200px;
+  width:  200px;
+  border-left:  5px solid;
+
+}
